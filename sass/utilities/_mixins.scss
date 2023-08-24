@@ -1,0 +1,51 @@
+@mixin main-info-style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@mixin best-sellers-style {
+        background-color: #4FB5AB;
+        border-radius: 3px;
+        max-width: 250px;
+        padding: 30px;
+        margin: 5px;
+        text-align: center;
+}
+
+@mixin btn-products {
+            font-size: 1.125rem;
+            padding: 15px;
+            margin: 5px;
+            width: 180px;
+            background-color: black;
+            color: white;
+            border-radius: 10px 10px 10px 10px;
+            border: none;
+}
+
+@mixin footer {
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: $background-header;
+}
+
+@mixin h1-titulo {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}

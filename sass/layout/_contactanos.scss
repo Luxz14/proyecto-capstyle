@@ -1,0 +1,41 @@
+.section-1-contact {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 50px;
+    .container-contactanos {
+        margin-right: 40px;
+        .short {
+            max-width: 450px;
+        }
+        .fa-brands {
+            font-size: 35px;
+            margin: 15px 10px;
+            color: black;
+        }
+    }
+    .container-form {
+        text-align: center;
+        margin-left: -60px;
+        label {
+            display: block;
+            font-weight: 600;
+            margin: 15px;
+            .input-form {
+                padding: 5px;
+                height: 40px;
+                width: 230px;
+            }
+            #mensaje-input {
+                width: 300px;
+                height: 200px;
+            }
+            #button-input {
+                background-color: #4FB5AB;
+                border-radius: 100px 100px 100px 100px;
+                border: none;
+                color: black;
+            }
+        }
+    }
+}

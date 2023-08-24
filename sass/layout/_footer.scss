@@ -1,0 +1,43 @@
+.container-footer {
+    @include footer;
+    .container-products-footer, .container-contact-footer {
+        flex: 1;
+        a {
+            color: black;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .container-contact-footer {
+        text-align: right;
+    }
+    .container-logo-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        img {
+            width: 100%;
+            height: 205px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+        p {
+            margin: 3px 0;
+            font-size: 14px;
+        }
+        .social-media {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .fa-brands {
+                font-size: 24px;
+                margin: 25px 10px;
+                color: black;
+            }
+        }
+    }
+}

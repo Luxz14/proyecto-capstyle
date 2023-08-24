@@ -1,0 +1,45 @@
+.container {
+    @include main-info-style;
+    .main-info p {
+        max-width: 550px;
+    }
+    img {
+        width: 640px;
+        height: 330px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+.locacion h4 {
+    margin-top: 80px;
+    margin-left: 100px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.map iframe {
+    margin-left: 100px;
+    padding: 10px;
+}
+
+.container-social-nosotros h4 {
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 100px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.social-media-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+        .fa-brands {
+            margin-top: 20px;
+            font-size: 30px;
+            color: black;
+        }
+}

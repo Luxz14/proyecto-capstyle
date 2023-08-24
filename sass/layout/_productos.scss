@@ -1,0 +1,33 @@
+.container-offer-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    .offer-products {
+        flex-basis: calc(25% - 10px);
+        margin: 25px 40px;
+        padding: 10px;
+        text-align: center;
+        img {
+            border-radius: 5px;
+            width: 350px;
+            height: 250px;
+            object-fit: cover;
+        }
+        p {
+            flex-basis: calc(25% - 10px);
+            text-align: center;
+            margin: 5px;
+            font-weight: bold;
+        }
+        button {
+            font-size: 1.125rem;
+            padding: 15px;
+            width: 180px;
+            background-color: #4FB5AB;
+            color: black;
+            border-radius: 10px 10px 10px 10px;
+            border: none;
+        }
+    }
+    
+}
