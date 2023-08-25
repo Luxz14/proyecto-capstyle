@@ -1,0 +1,46 @@
+@media (max-width: 767px) {
+    .container img {
+        overflow-x: hidden;
+    }
+    .main-info {
+        padding: 10px;
+    margin-right: 5px;
+    .btn-contact {
+        margin-left: -10px;
+    }
+    }
+    .container-caps {
+        margin-top: 50px;
+    }
+    .best-sellers {
+        width: 130px;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+        h5 {
+            font-size: 1rem;
+            text-align: center;
+            margin: 4px;
+            font-weight: bold;
+        }
+        p {
+            font-size: .875rem;
+            text-align: center;
+            margin: 4px;
+            font-weight: bold;
+        }
+        .btn-products {
+            font-size: .875rem;
+            padding: 7px;
+            margin: 4px;
+            width: 50px;
+            background-color: black;
+            color: white;
+            border-radius: 10px 10px 10px 10px;
+            border: none;
+        }
+    }
+    .section-4 {
+        display: none;
+    }
+}

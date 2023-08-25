@@ -4,22 +4,10 @@ body {
     padding-bottom: 30em;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
+.custom-navbar {
     background-color: $background-header;
-    img {
+    .nav-link {
         padding: 10px;
-        margin: 5px;
-        width: 70px;
-        height: 70px;
-    }
-    .navbar {
-        padding: 10px;
-        margin: 5px;
-        background-color: $background-header;
-        .nav-link {
-            padding: 10px;
             margin: 10px;
             a {
                 text-decoration: none;
@@ -27,7 +15,6 @@ header {
                 &:hover {
                     text-decoration: underline;
                 }
-            }
         }
     }
 }
