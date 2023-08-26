@@ -1,10 +1,11 @@
 @media (max-width: 767px) {
+    /*Inicio*/
     .container img {
         overflow-x: hidden;
     }
     .main-info {
         padding: 10px;
-    margin-right: 5px;
+        margin-right: 5px;
     .btn-contact {
         margin-left: -10px;
     }
@@ -43,4 +44,86 @@
     .section-4 {
         display: none;
     }
+    /*Productos*/
+    .container-offer-products {
+        grid-template-columns: repeat(2, 1fr);
+        .offer-products {
+            margin: 3px;
+            margin-bottom: 15px;
+            img {
+                width: 125px;
+                overflow-x: hidden;
+            }
+            p {
+                font-size: 13px;
+            }
+            button {
+                font-size: .875rem;
+                padding: 7px;
+                width: 100px;
+                background-color: #4FB5AB;
+                color: black;
+                border-radius: 10px 10px 10px 10px;
+                border: none;
+            }
+        }
+    }
+    /*Personalizacion*/
+    /*Contactanos*/
+    .section-1-contact {
+        flex-direction: column;
+        align-items: center;
+        .container-contactanos {
+            margin: 0;
+        }
+        .container-form {
+            margin: 0;
+        }
+    }
+    /*Sobre Nosotros*/
+    .none {
+        display: none;
+    }
+    .section-2-about {
+        align-items: center;
+        .locacion h4 {
+            font-size: 20px;
+        }
+        .map iframe {
+            width: 250px;
+            height: 240px;
+            overflow-x: hidden;
+        }
+    }
+    .container-social-nosotros {
+        text-align: center;
+        .social-media-nosotros {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+    }
+    
+    /*Footer*/
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
+        .img-footer img {
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .container-contact-footer h5, p {
+            margin: 10px 0;
+        }
+        .container-social-media {
+            margin-top: 10px;
+            .social-media {
+                justify-content: center; 
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
 }

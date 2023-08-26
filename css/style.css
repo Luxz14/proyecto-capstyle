@@ -427,6 +427,7 @@ body {
 }
 
 @media (max-width: 767px) {
+  /*Inicio*/
   .container img {
     overflow-x: hidden;
   }
@@ -470,6 +471,83 @@ body {
   }
   .section-4 {
     display: none;
+  }
+  /*Productos*/
+  .container-offer-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-offer-products .offer-products {
+    margin: 3px;
+    margin-bottom: 15px;
+  }
+  .container-offer-products .offer-products img {
+    width: 125px;
+    overflow-x: hidden;
+  }
+  .container-offer-products .offer-products p {
+    font-size: 13px;
+  }
+  .container-offer-products .offer-products button {
+    font-size: 0.875rem;
+    padding: 7px;
+    width: 100px;
+    background-color: #4FB5AB;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+  }
+  /*Personalizacion*/
+  /*Contactanos*/
+  .section-1-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-1-contact .container-contactanos {
+    margin: 0;
+  }
+  .section-1-contact .container-form {
+    margin: 0;
+  }
+  /*Sobre Nosotros*/
+  .none {
+    display: none;
+  }
+  .section-2-about {
+    align-items: center;
+  }
+  .section-2-about .locacion h4 {
+    font-size: 20px;
+  }
+  .section-2-about .map iframe {
+    width: 250px;
+    height: 240px;
+    overflow-x: hidden;
+  }
+  .container-social-nosotros {
+    text-align: center;
+  }
+  .container-social-nosotros .social-media-nosotros {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  /*Footer*/
+  .container-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container-footer .img-footer img {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .container-footer .container-contact-footer h5, .container-footer p {
+    margin: 10px 0;
+  }
+  .container-footer .container-social-media {
+    margin-top: 10px;
+  }
+  .container-footer .container-social-media .social-media {
+    justify-content: center;
   }
 }
 
