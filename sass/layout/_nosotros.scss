@@ -1,7 +1,7 @@
-.container {
+.container-nosotros {
     @include main-info-style;
-    .main-info p {
-        max-width: 550px;
+    .main-info-nosotros p {
+        max-width: 600px;
     }
     img {
         width: 640px;
@@ -27,7 +27,6 @@
 .container-social-nosotros h4 {
     text-align: center;
     margin-top: 80px;
-    margin-left: 100px;
     padding: 10px;
     font-size: 30px;
 }
