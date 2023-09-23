@@ -77,10 +77,10 @@ const comprarGorras = (listaProductos) => {
         console.log(talles)
 
 
-        const encontrarProductos = productos.some(producto => producto.nombre.toLowerCase() === gorras);
+        const encontrarProductos = productos.some(producto => producto.nombre === gorras);
 
         if(encontrarProductos) {
-            const producto = productos.find(producto => producto.nombre.toLowerCase() === gorras);
+            const producto = productos.find(producto => producto.nombre === gorras);
             agregarProductoCarrito(producto, cantidad); //Llamamos a la funcion para verificar si el producto ya estaba en el carrito anteriormente(de esa manera solamente sumar la cantidad) o si hay que agregarlo.
 
             subtotal += producto.precio * cantidad; //Calculamos el subtotal
