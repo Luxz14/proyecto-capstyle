@@ -1,0 +1,89 @@
+.titulo-carrito {
+    @include h1-titulo;
+}
+
+.container-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .carrito-vacio, .carrito-comprado {
+        margin: 15px;
+        color: #40938b;
+        
+    }
+    .carrito-productos {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .producto-carrito {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #acacac;
+            color: black;
+            padding: 0.5rem;
+            padding-right: 1.5rem;
+            border-radius: 1rem;
+            margin: 25px;
+            .producto-carrito-img {
+                width: 6rem;
+                border-radius: 1rem;
+            }
+            .cart-descripcion small {
+                font-size: 0.75rem;
+            }
+            .producto-eliminar {
+                border: 0;
+                background-color: transparent;
+                color: red;
+                cursor: pointer;
+            }
+        }
+    }
+    .container-carrito-opciones {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15px;
+        margin-left: 10px;
+        .carrito-opciones-vaciar .vaciar-carrito {
+            border: 0;
+            background-color: grey;
+            color: white;
+            text-transform: uppercase;
+            padding: 1rem;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+        .carrito-opciones-comprar {
+            display: flex;
+            .carrito-total {
+                display: flex;
+                background-color: grey;
+                color: white;
+                text-transform: uppercase;
+                padding: 1rem;
+                gap: 1rem;
+                border-top-left-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+            }
+            .carrito-comprar {
+                border: 0;
+                background-color: #40938b;
+                color: white;
+                text-transform: uppercase;
+                padding: 1rem;
+                cursor: pointer;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+            }
+        }
+    }
+    .none {
+        display: none;
+    }
+    
+}
+
+
+
+
