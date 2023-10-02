@@ -9,6 +9,13 @@ body {
     .nav-link {
         padding: 10px;
             margin: 10px;
+            .cantidad {
+                background-color: white;
+                color: #4FB5AB;
+                padding: .25rem;
+                border-radius: .25rem;
+                margin-left: 5px;
+            }
             a {
                 text-decoration: none;
                 color: black;

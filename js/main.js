@@ -1,6 +1,6 @@
 //Segunda pre-entrega de JS
 
-
+/*
 //Funcion Saludo
 const saludo = () => {
     let preguntarUser; 
@@ -133,3 +133,4 @@ let alertPresentacion = alert('En CapStyle nos diferenciamos por nuestro detalle
 
 //Llamamos a la funcion para ordenar los productos
 ordenarProductos();
+*/

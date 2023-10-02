@@ -1,33 +1,82 @@
 const productos = [
     {
         id: 1,
-        nombre: "Caps",
-        tipo: "Caps",
+        nombre: "Piluso",
+        tipo: "Pilusos",
+        imagen: "../assets/pilusos-img-offers.webp",
         precio: 19.29,
         cantidad: 0,
     },
 
     {
         id: 2,
-        nombre: "Sunhats",
-        tipo: "Sunhats",
-        precio: 29.99,
-        cantidad: 0
+        nombre: "Cap",
+        tipo: "Caps",
+        imagen: "../assets/cap-img-offers.webp",
+        precio: 19.29,
+        cantidad: 0,
     },
 
     {
         id: 3,
-        nombre: "Beanies",
-        tipo: "Beanies",
-        precio: 29.99,
+        nombre: "Sunhat",
+        tipo: "Sunhats",
+        imagen: "../assets/sunhats-img-offers.webp",
+        precio: 19.99,
         cantidad: 0
     },
 
     {
         id: 4,
-        nombre: "Pilusos",
-        tipo: "Pilusos",
-        precio: 19.99,
+        nombre: "Beanie",
+        tipo: "Beanies",
+        imagen: "../assets/beanies-img-offers.webp",
+        precio: 29.99,
+        cantidad: 0
+    },
+
+    {
+        id: 5,
+        nombre: "Sunhat",
+        tipo: "Sunhats",
+        imagen: "../assets/sunhat-product.webp",
+        precio: 29.99,
+        cantidad: 0
+    },
+
+    {
+        id: 6,
+        nombre: "Cap",
+        imagen: "../assets/cap-product-1.webp",
+        tipo: "Caps",
+        precio: 29.99,
+        cantidad: 0
+    },
+
+    {
+        id: 7,
+        nombre: "Yellow Cap",
+        imagen: "../assets/cap-product-2.webp",
+        tipo: "Caps",
+        precio: 39.29,
+        cantidad: 0
+    },
+
+    {
+        id: 8,
+        nombre: "NY Cap",
+        imagen: "../assets/cap-product-3.webp",
+        tipo: "Caps",
+        precio: 39.99,
+        cantidad: 0
+    },
+
+    {
+        id: 9,
+        nombre: "Beanie",
+        imagen: "../assets/beanie-product-1.webp",
+        tipo: "Beanies",
+        precio: 39.29,
         cantidad: 0
     },
 ]

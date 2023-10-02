@@ -20,6 +20,13 @@ body {
   padding: 10px;
   margin: 10px;
 }
+.custom-navbar .nav-link .cantidad {
+  background-color: white;
+  color: #4FB5AB;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-left: 5px;
+}
 .custom-navbar .nav-link a {
   text-decoration: none;
   color: black;
