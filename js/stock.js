@@ -1,3 +1,4 @@
+//Base de Datos (Productos)
 const productos = [
     {
         id: 1,
@@ -5,7 +6,6 @@ const productos = [
         tipo: "Pilusos",
         imagen: "../assets/pilusos-img-offers.webp",
         precio: 19.29,
-        cantidad: 0,
     },
 
     {
@@ -14,7 +14,6 @@ const productos = [
         tipo: "Caps",
         imagen: "../assets/cap-img-offers.webp",
         precio: 19.29,
-        cantidad: 0,
     },
 
     {
@@ -23,7 +22,6 @@ const productos = [
         tipo: "Sunhats",
         imagen: "../assets/sunhats-img-offers.webp",
         precio: 19.99,
-        cantidad: 0
     },
 
     {
@@ -32,7 +30,6 @@ const productos = [
         tipo: "Beanies",
         imagen: "../assets/beanies-img-offers.webp",
         precio: 29.99,
-        cantidad: 0
     },
 
     {
@@ -41,7 +38,6 @@ const productos = [
         tipo: "Sunhats",
         imagen: "../assets/sunhat-product.webp",
         precio: 29.99,
-        cantidad: 0
     },
 
     {
@@ -50,7 +46,6 @@ const productos = [
         imagen: "../assets/cap-product-1.webp",
         tipo: "Caps",
         precio: 29.99,
-        cantidad: 0
     },
 
     {
@@ -59,7 +54,6 @@ const productos = [
         imagen: "../assets/cap-product-2.webp",
         tipo: "Caps",
         precio: 39.29,
-        cantidad: 0
     },
 
     {
@@ -68,7 +62,6 @@ const productos = [
         imagen: "../assets/cap-product-3.webp",
         tipo: "Caps",
         precio: 39.99,
-        cantidad: 0
     },
 
     {
@@ -77,6 +70,5 @@ const productos = [
         imagen: "../assets/beanie-product-1.webp",
         tipo: "Beanies",
         precio: 39.29,
-        cantidad: 0
     },
 ]
