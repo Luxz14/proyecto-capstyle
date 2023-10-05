@@ -3,11 +3,11 @@ const form = document.querySelector('#form-contact');
 const nameInput = document.querySelector('#name-input');
 const emailInput = document.querySelector('#email-input');
 const asuntoInput = document.querySelector('#asunto-input');
-const mensajeInput = document.querySelector('#mensaje-input')
-const mensajeAgradecimiento = document.querySelector('#mensaje-agradecimiento');
+const mensajeInput = document.querySelector('#mensaje-input');
+const btnSubmit = document.querySelector('#button-input');
 
 
-//Evento en la variable form para un mensaje de completar los campos solicitados, llamar a la funcion para agradecer con un mensaje y un reseteo de los datos del usuario.
+//Evento en la variable form para un mensaje de completar los campos solicitados, llamar a la funcion para cuando el formulario se completo y un reseteo de los datos del usuario.
 //NO hay utilizacion de localStorage o sessionStorage por una cuestion de privacidad, pero si se podia utilizar dejeme un comentario y lo hare.
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -16,14 +16,19 @@ form.addEventListener('submit', (e) => {
         alert('Por favor complete todos los campos obligatorios');
         return;
     } 
-    mostrarAgradecimiento();
+    formularioEnviado();
 
     form.reset();
 });
 
 
-//Funcion para agradecer llamado a la variable mensajeAgradecimiento.
-function mostrarAgradecimiento() {
-    mensajeAgradecimiento.textContent = "¡Gracias por tu mensaje! Hemos recibido tu consulta.";
-    mensajeAgradecimiento.classList.remove("none");
+//Funcion para cuando el formulario fue enviado
+function formularioEnviado() {
+    btnSubmit.addEventListener('click', () => {
+        Swal.fire({
+            icon: 'success',
+            title: 'Su formulario fue enviado!',
+            text: 'Recibira una respuesta a la brevedad. Muchas Gracias!'
+        });
+    });
 }

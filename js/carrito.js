@@ -69,19 +69,35 @@ function productosCarrito() {
 productosCarrito();
 
 
+
 //Funcion para eliminar productos del carrito con el boton
 function botonesEliminar() {
     btnEliminar = document.querySelectorAll('.producto-eliminar');
 
     btnEliminar.forEach(boton => {
-        boton.addEventListener('click', eliminarDelCarrito);
+        boton.addEventListener('click', () => {
+            Swal.fire({
+                title: 'Esta seguro que quiere eliminar el producto?',
+                text: "Esta a punto de eliminarlo y debera volver a agregarlo desde productos si asi lo desea",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Eliminar',
+                cancelButtonText: 'Cancelar'
+            }).then((result) => {
+                if(result.isConfirmed) {
+                    eliminarDelCarrito(boton);
+                }
+            })
+        });
     });
 }
 
 
 //Funcion para borrar los productos seleccionados tanto en la copia del DOM como en el localStorage.
-function eliminarDelCarrito(e) {
-    const idBtn = e.currentTarget.id;
+function eliminarDelCarrito(boton) {
+    const idBtn = boton.getAttribute('id');
 
     const index = productosDelCarrito.findIndex(producto => producto.id == idBtn);
     productosDelCarrito.splice(index, 1)
@@ -91,7 +107,14 @@ function eliminarDelCarrito(e) {
     
     const precioTotal = calcularPrecioTotal();
     totalElement.innerText = `$${precioTotal}`;
+
+    Swal.fire(
+        'Eliminado!',
+        'El producto ha sido eliminado con exito.',
+        'success'
+    );
 }
+
 
 
 //Funcion para calulcar el total de la compra
