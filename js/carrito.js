@@ -1,6 +1,6 @@
 //Generacion de variables, llamados utilizando querySelector y uso del localStorage.
 
-let productosDelCarrito = localStorage.getItem("carrito"); //Obtenemos los productos a traves de la clave carrito.
+let productosDelCarrito = localStorage.getItem("producto-en-el-carrito"); //Obtenemos los productos a traves de la clave carrito.
 
 productosDelCarrito = JSON.parse(productosDelCarrito); //Utilizamos el metodo parse para obtener el valor de la variable.
 
@@ -33,19 +33,19 @@ function productosCarrito() {
             div.innerHTML = `
             <img class="producto-carrito-img" src="${producto.imagen} " alt="${producto.nombre}">
             <div class="cart-descripcion">
-                <small>Titulo</small>
-                <h3>${producto.nombre}</h3>
+                <h6>Titulo</h6>
+                <h4>${producto.nombre}</h4>
             </div>
             <div class="producto-cantidad">
-                <small>Cantidad</small>
+                <h6>Cantidad</h6>
                 <p>${producto.cantidad}</p>
             </div>
             <div class="producto-precio">
-                <small>Precio</small>
+                <h6>Precio</h6>
                 <p>$${producto.precio}</p>
             </div>
             <div class="producto-subtotal">
-                <small>Subtotal</small>
+                <h6>Subtotal</h6>
                 <p>$${producto.precio * producto.cantidad}</p>
             </div>
             <button class="producto-eliminar" id="${producto.id}"><i class="fa-solid fa-trash"></i></button>
@@ -102,7 +102,7 @@ function eliminarDelCarrito(boton) {
     const index = productosDelCarrito.findIndex(producto => producto.id == idBtn);
     productosDelCarrito.splice(index, 1)
 
-    localStorage.setItem("carrito", JSON.stringify(productosDelCarrito));
+    localStorage.setItem("producto-en-el-carrito", JSON.stringify(productosDelCarrito));
     productosCarrito();
     
     const precioTotal = calcularPrecioTotal();
@@ -133,7 +133,7 @@ btnVaciarCarrito.addEventListener('click', vaciarCarrito);
 
 function vaciarCarrito() {
     productosDelCarrito.length = 0;
-    localStorage.setItem("carrito", JSON.stringify(productosDelCarrito));
+    localStorage.setItem("producto-en-el-carrito", JSON.stringify(productosDelCarrito));
 
     productosCarrito();
 }
@@ -144,7 +144,7 @@ btnComprarCarrito.addEventListener('click', comprarCarrito);
 
 function comprarCarrito() {
     productosDelCarrito.length = 0;
-    localStorage.setItem("carrito", JSON.stringify(productosDelCarrito));
+    localStorage.setItem("producto-en-el-carrito", JSON.stringify(productosDelCarrito));
     
     carritoVacio.classList.add('none');
     carritoProductos.classList.add('none');

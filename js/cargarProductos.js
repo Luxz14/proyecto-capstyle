@@ -6,7 +6,7 @@ const cantidad = document.querySelector('.cantidad'); //Actualizar como se visua
 
 const productoContenedor = document.querySelector('#contenedor-productos'); //Obtener el id del producto a traves de los botones
 
-let productosDelCarrito = localStorage.getItem("carrito"); //Obtener la clave de carrito
+let productosDelCarrito = localStorage.getItem("producto-en-el-carrito"); //Obtener la clave de carrito
 
 const botonesCategoria = document.querySelectorAll('.offer-caps') //Dividir los productos en base a las preferencias del usuario
 
@@ -45,10 +45,10 @@ const validarProductosCarrito = (productoId) => {
 
     actualizarCantidad(); //Llamamos a la funcion para actualizar el numero de los productos del carrito
 
-    localStorage.setItem("carrito", JSON.stringify(carrito)); //Seteamos en el localStorage con la clave carrito y utilizando el metodo stringify.
+    localStorage.setItem("producto-en-el-carrito", JSON.stringify(carrito)); //Seteamos en el localStorage con la clave carrito y utilizando el metodo stringify.
 }
 
-
+/*
 //Funcion para filtrar productos (Incompleto)
 botonesCategoria.forEach(boton => {
     boton.addEventListener('click', (e) => {
@@ -56,6 +56,7 @@ botonesCategoria.forEach(boton => {
         pintarProductos(productosSeleccionados);
     })
 })
+*/
 
 
 //Funcion para actualizar el numero de la cantidad de productos del carrito
