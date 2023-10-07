@@ -1,8 +1,8 @@
 //Generacion de variables, llamados utilizando querySelector y uso del localStorage.
 
-let productosDelCarrito = localStorage.getItem("producto-en-el-carrito"); //Obtenemos los productos a traves de la clave carrito.
+let productosDelCarrito = localStorage.getItem("producto-en-el-carrito"); //Obtenemos los productos a traves de la clave producto-en-el-carrito.
 
-productosDelCarrito = JSON.parse(productosDelCarrito); //Utilizamos el metodo parse para obtener el valor de la variable.
+productosDelCarrito = JSON.parse(productosDelCarrito); //Utilizamos el metodo parse para obtener el valor de la variable productosDelCarrito.
 
 //Llamados a las clases y id del archivo carrito.html
 const carritoVacio = document.querySelector('.carrito-vacio');
@@ -24,7 +24,7 @@ function productosCarrito() {
         carritoOpciones.classList.remove('none');
         carritoComprado.classList.add('none');
     
-        carritoProductos.innerHTML = ""; //Lo comenzamos como vacio
+        carritoProductos.innerHTML = ""; //Lo iniciamos como vacio
     
         productosDelCarrito.forEach(producto => {
             const div = document.createElement("div");
@@ -56,7 +56,7 @@ function productosCarrito() {
             totalElement.innerText = `$${precioTotal}`;
         })
     } else {
-        carritoVacio.classList.remove('none'); //Si no hay productos en el carrito, dejamos el mensaje de carrito vacio.
+        carritoVacio.classList.remove('none'); //Si no hay productos en el carrito, dejamos el mensaje de carrito vacio a traves de la clase none.
         carritoProductos.classList.add('none');
         carritoOpciones.classList.add('none');
         carritoComprado.classList.add('none');
@@ -65,7 +65,7 @@ function productosCarrito() {
     botonesEliminar();
 }
 
-//Llamar a la funcion de forma global para que siempre se muestre
+//Llamar a la funcion de forma global
 productosCarrito();
 
 
@@ -100,7 +100,7 @@ function eliminarDelCarrito(boton) {
     const idBtn = boton.getAttribute('id');
 
     const index = productosDelCarrito.findIndex(producto => producto.id == idBtn);
-    productosDelCarrito.splice(index, 1)
+    productosDelCarrito.splice(index, 1); //Utilizamos splice para eliminar el producto a traves de su index
 
     localStorage.setItem("producto-en-el-carrito", JSON.stringify(productosDelCarrito));
     productosCarrito();
