@@ -1,3 +1,4 @@
+/*
 //Base de Datos (Productos)
 const productos = [
     {
@@ -72,3 +73,4 @@ const productos = [
         precio: 39.29,
     },
 ]
+*/
