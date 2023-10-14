@@ -29,6 +29,18 @@ productoContenedor.addEventListener('click', (e) => {
 
 //Agregar productos al carrito, actualizar la cantidad y setearlos en el local storage.
 const validarProductosCarrito = (productoId) => {
+    Toastify({
+        text: "Agregaste un producto",
+        duration: 3000,
+        close: true,
+        gravity: "top", 
+        position: "left", 
+        stopOnFocus: true,
+        style: {
+        background: "linear-gradient(to right, #4FB5AB, #4FB5AB)",
+        },
+    }).showToast();
+    
     const estaRepetido = carrito.some(producto => producto.id == productoId); //Buscar si algun producto esta repetido
 
     if(!estaRepetido) {
