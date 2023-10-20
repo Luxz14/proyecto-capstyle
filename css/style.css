@@ -347,6 +347,9 @@ body {
   border: none;
   color: black;
 }
+.section-1-contact .container-form #mensaje-agradecimiento {
+  display: none;
+}
 
 .container-nosotros {
   display: flex;
@@ -432,6 +435,53 @@ body {
   color: black;
 }
 
+.section-5 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-5 .titulo-faq {
+  font-size: 2rem;
+  margin: 2rem 0rem;
+  margin-top: 4.5rem;
+}
+.section-5 .faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+}
+.section-5 .faq .pregunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-5 .faq .pregunta h3 {
+  font-size: 1.5rem;
+}
+.section-5 .faq .respuesta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+.section-5 .faq .respuesta p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+.section-5 .faq.active .respuesta {
+  max-height: 300px;
+}
+.section-5 .faq.active i {
+  transform: rotate(180deg);
+}
+.section-5 i {
+  transition: transform 0.5s ease-in;
+}
+
 .titulo-carrito {
   text-align: center;
   margin: 20px auto;
@@ -469,7 +519,7 @@ body {
   width: 6rem;
   border-radius: 1rem;
 }
-.container-carrito .carrito-productos .producto-carrito .cart-descripcion small {
+.container-carrito .carrito-productos .producto-carrito .cart-descripcion h6 {
   font-size: 0.75rem;
 }
 .container-carrito .carrito-productos .producto-carrito .producto-eliminar {
@@ -676,6 +726,11 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+  }
+  /*Carrito*/
+  .carrito-productos {
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   /*Footer*/
   .container-footer {

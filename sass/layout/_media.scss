@@ -155,6 +155,11 @@
         flex-direction: column;
         margin-bottom: 40px;
         }
+    /*Carrito*/
+    .carrito-productos {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     /*Footer*/
     .container-footer {
         flex-direction: column;

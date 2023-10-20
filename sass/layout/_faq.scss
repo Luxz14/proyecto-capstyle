@@ -1,0 +1,61 @@
+.section-5 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .titulo-faq {
+        font-size: 2rem;
+        margin: 2rem 0rem;
+        margin-top: 4.5rem;
+    }
+    .faq {
+        max-width: 700px;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #000;
+        cursor: pointer;
+        .pregunta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pregunta h3 {
+            font-size: 1.5rem;
+        }
+        .respuesta {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1.4s ease;
+        }
+        .respuesta p {
+            padding-top: 1rem;
+            line-height: 1.6;
+            font-size: 1.4rem;
+        }
+    }
+    .faq.active .respuesta {
+        max-height: 300px;
+    }
+    
+    .faq.active i {
+        transform: rotate(180deg);
+    }
+    
+    i {
+        transition: transform .5s ease-in;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
