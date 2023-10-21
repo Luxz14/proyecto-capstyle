@@ -12,6 +12,6 @@
 - *Preprocesador Sass y Framework Bootstrap*
 - JavaScript
 
-[![HTML Imagen](https://www.jjpeleato.com/courses/html5forseo/img/html5.png "HTML Imagen")](https://www.jjpeleato.com/courses/html5forseo/img/html5.png "HTML Imagen")
+[![HTML Imagen](https://th.bing.com/th/id/OIP.sxgAuWLSIvPXh0cZ2bmQvgHaIj?pid=ImgDet&rs=1 "HTML Imagen")](https://th.bing.com/th/id/OIP.sxgAuWLSIvPXh0cZ2bmQvgHaIj?pid=ImgDet&rs=1 "HTML Imagen")
 [![CSS Imagen](https://th.bing.com/th/id/OIP.9GLqOe56aIqcRvqi0jCQegHaE8?pid=ImgDet&rs=1 "CSS Imagen")](http://https://th.bing.com/th/id/OIP.9GLqOe56aIqcRvqi0jCQegHaE8?pid=ImgDet&rs=1 "CSS Imagen")
 [![Javascript Imagen](https://th.bing.com/th/id/OIP.zJolqY5gcB9coeVnBqQr-QHaIZ?pid=ImgDet&rs=1 "Javascript Imagen")](http://https://th.bing.com/th/id/OIP.zJolqY5gcB9coeVnBqQr-QHaIZ?pid=ImgDet&rs=1 "Javascript Imagen")
