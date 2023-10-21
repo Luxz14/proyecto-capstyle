@@ -1,4 +1,4 @@
-//Generacion de variables, llamados utilizando querySelector y uso del localStorage obteniendo la clave carrito.
+//Generacion de variables, llamados utilizando querySelector y uso del localStorage obteniendo la clave producto-en-el-carrito.
 
 let carrito; //Variable del carrito
 
@@ -6,7 +6,7 @@ const cantidad = document.querySelector('.cantidad'); //Actualizar como se visua
 
 const productoContenedor = document.querySelector('#contenedor-productos'); //Obtener el id del producto a traves de los botones
 
-let productosDelCarrito = localStorage.getItem("producto-en-el-carrito"); //Obtener la clave de carrito
+let productosDelCarrito = localStorage.getItem("producto-en-el-carrito"); //Obtener la clave de producto-en-el-carrito
 
 
 
@@ -56,7 +56,7 @@ const validarProductosCarrito = (productoId) => {
 
     actualizarCantidad(); //Llamamos a la funcion para actualizar el numero de los productos del carrito
 
-    localStorage.setItem("producto-en-el-carrito", JSON.stringify(carrito)); //Seteamos en el localStorage con la clave carrito y utilizando el metodo stringify.
+    localStorage.setItem("producto-en-el-carrito", JSON.stringify(carrito)); //Seteamos en el localStorage con la clave proudcto-en-el-carrito y utilizando el metodo stringify.
 }
 
 
